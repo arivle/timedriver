@@ -1,4 +1,4 @@
-baseURL = "https://localhost:1313/"
+baseURL = "https://arivleone.netlify.app/"
 title = "TimeDriver : Catatan Perjalanan Arivle"
 theme = "arivle"
 contentdir = "content/"
