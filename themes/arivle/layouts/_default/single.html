@@ -1,0 +1,41 @@
+{{ define "main" }}
+
+<section>
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-xl-7">
+                    <div>
+                        <h1 style="font-family: Roboto, sans-serif;font-weight: bold;color: #dc3545;">{{ .Title }}</h1>
+                    </div>
+                    <div>
+                        <p>{{ .Date.Format .Site.Params.dateFormat }}</p>
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="{{ .Params.Images | relURL }}" alt="artikel-pic">
+                    </div>
+                    <div>
+                        <p style="font-family: Roboto, sans-serif;font-weight: normal;font-style: normal;">{{ .Content }}</p>
+                    </div>
+                </div>
+                <div class="col-xl-5">
+                    <div class="p-4">
+                        <div>
+                            <h4 style="font-family: Roboto, sans-serif;font-weight: bold;color: #dc3545;">Artikel Lain</h4>
+                            {{ range first 3 .Site.RegularPages}}
+                            <a href="{{ .Permalink }}">
+                                <div class="row p-2">
+                                    <div class="col-md-5"><img class="img-fluid" src="{{ if eq .Params.Images "" }}/images/default-pic.svg{{else}}{{ .Params.Images | relURL }}{{end}}" alt="artikel-kecil"></div>
+                                    <div class="d-xl-flex align-items-xl-center col-md-7">
+                                        <h5 class="d-xl-flex align-items-xl-start" style="color: rgb(33,37,41);font-family: Roboto, sans-serif;font-weight: bold;">{{ .Title }}</h5>
+                                    </div>
+                                </div>
+                            </a>
+                         {{ end }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{{ end }}

@@ -1,0 +1,191 @@
+body {
+  background: #f7f7f7;
+}
+
+.archive-posts{
+    list-style: none;
+}
+
+.about{
+    background: #ffffff;
+}
+
+h1 {
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    color: #dc3545;
+}
+
+p{
+    font-family: Roboto, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+.badge{
+    background-color: #dc3545;
+}
+.navbar.navbar-light.navbar-expand-md.navigation-clean.p-4 {
+  background: #ffffff;
+}
+
+.hero-images {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: .25;
+  background-clip: padding-box;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background-color: #fff;
+  justify-content: center;
+  padding: 150px;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-top: 150px;
+}
+
+.hero-container.p-5.block {
+  position: relative;
+  color: #ffffff !important;
+}
+
+.text-primary {
+  color: #dc3545 !important;
+}
+
+.text-center{
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    color: #2f2f2f;
+    line-height: 2;
+}
+
+.text-center.text-primary{
+    font-family: Roboto, sans-serif;
+    color: rgb(255,255,255);
+    font-weight: bold;
+}
+
+.card.article-card {
+  max-height: 360px;
+}
+
+.card-title{
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+}
+
+..btn.mr-3.mb-3.btn-zio{
+    font-family: Roboto, sans-serif;
+}
+
+.btn-zio {
+  color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-zio:hover {
+  color: #ffffff;
+  background-color: #dc3545;
+  border: #dc3545;
+}
+
+.border {
+  background-color: #dc3545;
+  display: inline-block;
+  border-radius: 3px;
+  height: 6px;
+  position: relative;
+  width: 90px;
+}
+
+.social {
+  display: flex;
+}
+
+.social-item {
+  flex-grow: 1;
+  color: #dc3545;
+}
+
+.footer {
+  background-color: #dc3545;
+}
+
+.footer-content.p-4.text-center {
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+}
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link{
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link:active {
+  border-bottom: 1px solid #dc3545;
+  color: #dc3545;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link:hover {
+  border-bottom: 1px solid #dc3545;
+  color: #dc3545;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  border-bottom: 1px solid #dc3545;
+  color: #dc3545;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #2f2f2f;
+}
+
+.img-fluid.thumb {
+  max-width: auto;
+}
+
+.pagination {
+    display: inline-flex;
+}
+
+.page-link {
+  color: #dc3545;
+}
+
+.page-link:hover {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.page-link:active {
+  border-color: #dc3545;
+}
+
+.page-item.active .page-link{
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.tagar{
+    color: #dc3545;
+}
+
+.tagar:hover{
+    color: #ffffff;
+    background-color:#dc3545;
+}
+
+
+
+

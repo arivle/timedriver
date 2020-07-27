@@ -1,0 +1,12 @@
+{{ if .Site.Params.hero.enable }}
+{{ "<!-- Hero Area -->" | safeHTML }}
+    <section id="hero" class="hero">
+        <div class="hero-images" style="background-image: url( {{ .Site.Params.hero.image | absURL }} );"></div>
+        <div class="container">
+            <div class="hero-container p-5 block">
+                <h1 class="text-center text-primary">{{ .Site.Params.hero.title }}</h1>
+                <p class="text-center">{{ .Site.Params.Description }}</p>
+            </div>
+        </div>
+    </section>
+{{ end }}

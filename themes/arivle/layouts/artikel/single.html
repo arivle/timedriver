@@ -1,0 +1,66 @@
+{{ define "main" }}
+
+<section>
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-xl-7">
+                    <div>
+                        <h1>{{ .Title }}</h1>
+                    </div>
+                    <div>
+                        <p>{{ .Date.Format .Site.Params.dateFormat }}</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <img class="img-fluid" src="{{ if eq .Params.Images "" }}/images/default-pic.svg{{else}}{{ .Params.Images | relURL }}{{end}}" alt="artikel-pic">
+                    </div>
+                    <div>
+                        <p>{{ .Content }}</p>
+                    </div>
+                    <hr>
+                    <div class="d-block d-md-inline-block">
+                        <span>Kategori:&nbsp;</span>
+                        <span>
+                            {{ range .Params.tags }}
+                                <a class="text-link" href="/tags/{{ . }}">{{ . }}</a>,
+                            {{ end }}
+                        </span>
+                </div>
+                <hr>
+                </div>
+                <div class="col-xl-5">
+                    <div class="p-4">
+                        <div>
+                            <h4 style="font-family: Roboto, sans-serif;font-weight: bold;color: #dc3545;">Artikel Lain</h4>
+                            <hr>
+                            {{ range first 3 .Site.RegularPages}}
+                            <a href="{{ .Permalink }}">
+                                <div class="row p-2">
+                                    <div class="col-md-5"><img class="img-fluid" src="{{ if eq .Params.Images "" }}/images/default-pic.svg{{else}}{{ .Params.Images | relURL }}{{end}}" alt="artikel-kecil"></div>
+                                    <div class="d-xl-flex align-items-xl-center col-md-7">
+                                        <h5 class="d-xl-flex align-items-xl-start" style="color: rgb(33,37,41);font-family: Roboto, sans-serif;font-weight: bold;">{{ .Title }}</h5>
+                                    </div>
+                                </div>
+                            </a>
+                         {{ end }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- AddToAny BEGIN -->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style pt-5 pb-5">
+<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_twitter"></a>
+<a class="a2a_button_telegram"></a>
+<a class="a2a_button_whatsapp"></a>
+</div>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->
+
+
+        </div>
+        
+    </section>
+
+{{ end }}

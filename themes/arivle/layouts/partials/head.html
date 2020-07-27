@@ -1,0 +1,26 @@
+<head>
+    <meta charset="utf-8">
+    <title>{{ .Title }}</title>
+    {{ "<!-- mobile responsive meta -->" | safeHTML }}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    {{ with .Site.Params.themecolor }}<meta name="theme-color" content="{{ . }}">{{ end }}
+    <meta name="description" content="{{ .Site.Params.description }}">
+    {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+    {{ hugo.Generator }}
+    
+    <meta name="twitter:card" content="summary">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/images/default-pic.svg">
+    <meta name="twitter:image" content="/images/default-pic.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="/images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/android-icon-192x192.png">
+    <link rel="manifest" href="manifest.json">
+      {{ "<!-- plugins -->" | safeHTML }}
+    {{ range .Site.Params.plugins.css }}
+    <link rel="stylesheet" href="{{ .link | absURL }}">
+    {{ end }}
+    {{ "<!-- Main Stylesheet -->" | safeHTML }}
+    <link rel="stylesheet" href="{{ "css/styles.css" | absURL}}">
+</head>

@@ -1,0 +1,27 @@
+{{ if .Site.Params.about.enable }}
+{{ "<!-- Start About Section -->" | safeHTML }}
+    <section id="about" class="about">
+        <div class="container">
+            <div class="col p-5 text-center">
+                <h1 class="text-center">{{ .Site.Params.about.title }}</h1><span class="border"></span></div>
+            <div class="col pb-5">
+                <div class="row">
+                    <div class="col-xl-5">
+                        <div class="text-center"><img class="img-fluid w-25 mx-auto" src="{{ .Site.Params.about.image | absURL }}" alt="profil"></div>
+                        
+                        <div class="social text-center pt-3 pb-3">
+                        {{ range .Site.Params.social }}
+                            <a class="social-item" href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a>
+                        {{ end }}
+                    </div>
+                    
+                    
+                </div>
+                <div class="col-xl-7">
+                        <p style="font-family: Roboto, sans-serif;font-style: italic;">{{ .Site.Params.about.tentang }}</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+{{ "<!-- End About section -->" | safeHTML }}
+{{ end }}

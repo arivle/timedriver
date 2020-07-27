@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+<section>
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="text-center">
+                        <h1 style="font-family: Roboto, sans-serif;font-weight: bold;color: #dc3545;">{{ .Title }}</h1>
+                    </div>
+                    <div class="text-center">
+                        <p>{{ .Date.Format .Site.Params.dateFormat }}</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="img-fluid w-75" src="{{ .Params.Images | relURL }}" alt="artikel-pic">
+                    </div>
+                    <div>
+                        <p style="font-family: Roboto, sans-serif;font-weight: normal;font-style: normal;">{{ .Content }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{{ end }}

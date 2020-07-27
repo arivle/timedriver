@@ -1,0 +1,17 @@
+<!-- header -->
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean p-4">
+        <div class="container-fluid"><a class="navbar-brand" href="{{ .Site.BaseURL | absLangURL }}"><img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item px-3" role="presentation">
+                        <a class="nav-link" href="{{ .Site.BaseURL | absLangURL }}">Beranda</a></li>
+                    {{ range .Site.Menus.main }}
+                    <li class="nav-item px-3" role="presentation">
+                        <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a></li>
+                    {{ end }}
+                </ul>
+        </div>
+        </div>
+    </nav>
+<!-- /header -->

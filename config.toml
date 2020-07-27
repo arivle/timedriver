@@ -1,0 +1,82 @@
+baseURL = "https://localhost:1313/"
+title = "TimeDriver : Catatan Perjalanan Arivle"
+theme = "arivle"
+contentdir = "content/"
+layoutdir = "layouts"
+publishdir = "public"
+pagination = "6"
+PaginatePath = "content/artikel"
+metaDateFormat = "yaml"
+
+[[params.plugins.css]]
+link = "/plugins/bootstrap/dist/css/bootstrap.min.css"
+[[params.plugins.css]]
+link = "/plugins/fonts/fontawesome-all.min.css"
+[[params.plugins.css]]
+link = "https://fonts.googleapis.com/css?family=Roboto"
+[[params.plugins.css]]
+link = "https://fonts.googleapis.com/css?family=Roboto+Condensed"
+
+[[params.plugins.js]]
+link = "plugins/jQuery/jquery.min.js"
+
+### navigation
+[[menu.main]]
+name = "Artikel"
+URL = "/artikel"
+weight = 2
+
+[[menu.main]]
+name = "Tentang Saya"
+URL = "/about"
+weight = 3
+
+### default parameter
+[params]
+    title = "TimeDriver : Catatan Perjalanan Arivle"
+    logo = "images/logo-web.svg"
+    description = "Catatan perjalanan Arivle. Mencatat apa saja yang ingin dicatat. Jarum jam akan terus berjalan maju. Walau diputar balik, waktu bakal tetap menuju masa depan. Untuk itu, catatan ini sebagai pengingat pada diriku yang muda."
+    themecolor = "#dc3545"
+    dateFormat = " 02 January 2006"
+    
+    [params.hero]
+    enable = true
+    image = "images/hero/background-hero.webp"
+    title = "Catatan Perjalanan Arivle"
+    
+    [params.artikel]
+    enable = true
+    title = "Coretanku"
+    
+    [params.about]
+    enable = true
+    title = "Tentang Saya"
+    image = "images/about/arivle.png"
+    tentang = "Arivle sangat menyukai desain sejak kecil. Meskipun kuliah di jurusan Sistem Informasi, hobi desain itu tetap bertahan hingga kini. Mendesain beberapa karya menggunakan aplikasi open source sejak tahun 2019, Arivle dapat berkontribusi pada beberapa kegiatan komunitas open source di Indonesia, seperti GNOME Asia Summit 2019 dan Gimpscape Artweek 2020. Saat ini, penggemar Kamen Rider Zio ini menempuh studi S2 Ilmu Komputer di Universitas Gadjah Mada Yogyakarta."
+    
+        [[params.social]]
+        link = "https://dribbble.com/arivle"
+        icon = "fab fa-dribbble"
+        
+        [[params.social]]
+        link = "https://web.facebook.com/stanislausjp"
+        icon = "fab fa-facebook-square"
+        
+        [[params.social]]
+        link = "https://twitter.com/iam_stanis"
+        icon = "fab fa-twitter"
+        
+        [[params.social]]
+        link = "https://t.me/ArivleOne"
+        icon = "fab fa-telegram"
+        
+        [[params.social]]
+        link = "https://instagram.com/iam_stanis"
+        icon = "fab fa-instagram"
+        
+        [[params.social]]
+        link = "https://www.youtube.com/channel/UC__fcFZdjzmRqVSxQ8Giv6w"
+        icon = "fab fa-youtube"
+    
+    
+
