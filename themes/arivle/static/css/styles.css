@@ -83,12 +83,12 @@ p{
     font-weight: bold;
 }
 
-..btn.mr-3.mb-3.btn-zio{
+.btn.mr-3.mb-3.btn-zio{
     font-family: Roboto, sans-serif;
 }
 
 .btn-geiz {
-  font-size: 0.7rem !important;  
+  font-size: 0.9rem !important;  
   background-color: #dc3545;
   color: #ffffff;
 }
@@ -198,6 +198,9 @@ p{
     background-color:#dc3545;
 }
 
+.text-muted.card-subtitle{
+    font-size: 0.9rem;
+}
 
 
 
