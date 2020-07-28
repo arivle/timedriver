@@ -11,7 +11,7 @@
                         
                         <div class="social text-center pt-3 pb-3">
                         {{ range .Site.Params.social }}
-                            <a class="social-item" href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a>
+                            <a class="social-item" href="{{ .link | safeURL }}"><i class="{{ .icon }}" aria-label="{{ .label }}"></i></a>
                         {{ end }}
                     </div>
                     

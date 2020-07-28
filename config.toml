@@ -57,26 +57,32 @@ weight = 3
         [[params.social]]
         link = "https://dribbble.com/arivle"
         icon = "fab fa-dribbble"
+        label = "dribbble"
         
         [[params.social]]
         link = "https://web.facebook.com/stanislausjp"
         icon = "fab fa-facebook-square"
+        label = "facebook"
         
         [[params.social]]
         link = "https://twitter.com/iam_stanis"
         icon = "fab fa-twitter"
+        label = "twitter"
         
         [[params.social]]
         link = "https://t.me/ArivleOne"
         icon = "fab fa-telegram"
+        label = "telegram"
         
         [[params.social]]
         link = "https://instagram.com/iam_stanis"
         icon = "fab fa-instagram"
+        label = "instagram"
         
         [[params.social]]
         link = "https://www.youtube.com/channel/UC__fcFZdjzmRqVSxQ8Giv6w"
         icon = "fab fa-youtube"
+        label = "youtube"
     
     
 
